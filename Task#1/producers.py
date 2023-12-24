@@ -20,10 +20,10 @@ def Report(error_message: KafkaError, message) -> str:
     """
     Reports the Failure or Success of a message delivery.
     :arg:
-        error_message  (KafkaError): The Error that occurred while message producing.
-        message  (Actual message): The message that was produced.
+        error_message (KafkaError): The Error that occurred while message producing.
+        message (Actual message): The message that was produced.
     :return:
-        report  (String): The info about the result of message delivery.
+        report (String): The info about the result of message delivery.
     Note:
         In the delivery report callback the Message.key() and Message.value()
         will be the binary format as encoded by any configured Serializers and
